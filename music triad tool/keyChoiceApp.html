@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js">
+    </script>
+    
+    <!-- Javascript file: Decision engine that takes in chosen keys -->
+    <script src="choiceEngine.js"></script>
+    
+    <!-- Javascript file: Contains possible music key choices  -->
+    <script src="keyChoices.js"></script>
+    
+</head>
+    <body>
+        
+        <div class="row">
+            
+            <div class="col-sm-2" style="background-color:lavender;">
+
+            </div> 
+                 
+            <div class="col-sm-10" >
+                <h1>Major and Minor Scale and Key Look Up Application</h1>
+
+            </div> 
+    
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-2" style="background-color:lavender;">
+
+                
+            </div>
+            
+            <div class="col-sm-8" >
+
+                <table class="table table-condensed">
+                    
+                    <thead>
+                        <tr>
+                          <th>Root Key</th>
+                          <th>Chords</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                          <td>
+                              <div class="form-group">
+                                  <select class="form-control" id="sel1">
+                                    <option>C</option>
+                                    <option>C#</option>
+                                    <option>D</option>
+                                    <option>D#</option>
+                                    <option>E</option>
+                                    <option>F</option>
+                                    <option>F#</option>
+                                    <option>G</option>
+                                    <option>G#</option>
+                                    <option>A</option>
+                                    <option>A#</option>
+                                    <option>B</option>
+                                  </select>  
+                              </div>
+                          </td>
+                  
+                          <td>
+                                <div class="form-group">
+                                  <select class="form-control" id="sel2">
+                                    <option>Minor</option>
+                                    <option>Major</option>
+                                  </select>  
+                                </div>
+                          </td>
+                          
+                          <td>
+                              <button type="submit" class="btn btn-default" 
+                                      id="lookup">Look Up Chord</button>
+                              
+                          </td>
+                          
+                        </tr>
+                        
+                    </tbody>
+                    
+                </table>
+                
+            </div>
+            
+            <div class="col-sm-2" >
+
+                
+            </div>
+            
+        </div>
+        
+        <div class="row">
+            
+            <div class="col-sm-2" >
+
+                
+            </div>
+            
+            <div class="col-sm-8" >
+        
+                <div class="container">         
+                    <table class="table table-condensed">
+                      <thead>
+                        <tr>
+                          <th id="Chead1">C</th>
+                          <th id="C-head1" style="background-color: #D3D3D3;">C#</th>
+                          <th id="Dhead1">D</th>
+                          <th id="D-head1" style="background-color: #D3D3D3;">D#</th>
+                          <th id="Ehead1">E</th>
+                          <th id="Fhead1">F</th>
+                          <th id="F-head1" style="background-color: #D3D3D3;">F#</th>
+                          <th id="Ghead1">G</th>
+                          <th id="G-head1" style="background-color: #D3D3D3;">G#</th>
+                          <th id="Ahead1">A</th>
+                          <th id="A-head1" style="background-color: #D3D3D3;">A#</th>
+                          <th id="Bhead1">B</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                         <tr>
+                            <td id="int1">|</td>
+                            <td id="int2">|</td>
+                            <td id="int3">|</td>
+                            <td id="int4">|</td>
+                            <td id="int5">|</td>
+                            <td id="int6">|</td>
+                            <td id="int7">|</td>
+                            <td id="int8">|</td>
+                            <td id="int9">|</td>
+                            <td id="int10">|</td>
+                            <td id="int11">|</td>
+                            <td id="int12">|</td>
+                        </tr> 
+
+
+
+                      </tbody>
+
+                    </table>
+                    
+                </div>
+
+
+                <table class="table table-condensed">
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Compatible chords:
+                                </td>
+
+                                <td id="chordcom1">
+                                    1
+                                </td>
+                            </tr>
+
+                        </tbody>
+                </table>
+
+            </div>
+            
+            <div class="col-sm-2" >
+  
+            </div>
+            
+        </div>
+
+    </body>
+  
+</html>
