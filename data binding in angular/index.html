@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>Shirt Order Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+              integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">       
+        <link rel="stylesheet" href="bootstrapnavbar.css">
+
+        
+    </head>
+    
+        <script>            
+            var app = angular.module('shirtorderForm', []);
+            app.controller('costCtrl', function($scope, $window) {
+                
+                $scope.shirtSize = "None Chosen";
+                $scope.shirtColor = "None Chosen";
+                $scope.shirtDesign = "None Chosen";
+                $scope.designPrice = 0; 
+                
+                $scope.firstN = 'Nicholas';
+                $scope.lastN = 'Seamans';
+                $scope.email = 'nseamans@gmail.com';
+                
+                
+                $scope.myFunc = function() {
+                    
+
+                    
+                    //$window.alert("greeting");
+                };
+                
+            }); 
+            
+
+            
+        </script>
+    
+    
+    <body>
+        
+
+        
+        <div ng-app="shirtorderForm" ng-controller="costCtrl" name="shirtForm" novalidate>
+            
+            
+            <div class="row">
+                
+                <div class="col-sm-3" >
+                </div>
+                
+                <div class="col-sm-3" >
+                    <h1 class="navbar-brand mb-0">Electronic Music Shirts</h1>  
+                </div>
+
+                <div class="col-sm-6" >
+                    
+                </div>
+
+            
+            </div>
+            
+            <div class="row" >
+                <div class="col-sm-3"></div>
+                <hr>
+            </div>
+            
+            <div class="row">
+                
+                <div class="col-sm-3">
+                    
+                </div>
+                
+                <div class="col-sm-6" >
+                    <p class="h5"><u>Order Form</u></p>
+                </div>
+                
+                <div class="col-sm-3">
+                    
+                </div>
+                
+            </div>    
+            
+            <form> 
+                
+                <div class="row">
+
+                    <div class="col-sm-3">
+
+                    </div>
+
+                    <div class="col-sm-3" >
+                            <label for="fNameInput">First Names:</label>
+                            <input type="text" class="form-control" ng-model="firstName" 
+                                   id="fNameInput" type="text" required> 
+                    </div>
+
+                    <div class="col-sm-3" >
+                           <label for="lNameInput">Last Name:</label>
+                           <input type="text" class="form-control" ng-model="lastName"
+                                  id="lNameInput" type="text" required>
+                    </div>
+
+                    <div class="col-sm-3">
+
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-sm-3">
+
+                    </div>
+
+                    <div class="col-sm-3" >
+                        <label for="adressIn">Address:</label>
+                        <input type="text" class="form-control" ng-model="Address" id="addressIn" 
+                               type="text" required> 
+                    </div>
+
+
+                    <div class="col-sm-3" >
+                        <label for="apartmentIn">Apartment Number:</label>
+                        <input type="text" class="form-control" ng-model="ApartmentNumber" id="apartmentIn" 
+                               type="text" required>
+                    </div>
+
+
+                    <div class="col-sm-3">
+
+                    </div>
+
+                </div> 
+
+                <div class="row">
+
+                    <div class="col-sm-3">
+
+
+                    </div>
+
+                    <div class="col-sm-3">
+                              <form>
+                                  <table class="table">
+                                      <tbody>
+                                          <tr>
+                                              <div class="form-group">
+                                                <label for="sel1">Shirt Size:</label>
+                                                <select class="form-control" id="sel1" ng-model="shirtSize" required>
+                                                  <option>Extra Small</option>
+                                                  <option>Small</option>
+                                                  <option>Medium</option>
+                                                  <option>Large</option>
+                                                  <option>Extra Large</option>
+                                                </select>
+                                                </div>    
+                                          </tr>    
+                                      </tbody>     
+                                  </table> 
+                              </form> 
+                    </div>
+
+                    <div class="col-sm-3">
+
+                        <form>
+                                <table class="table">
+                                      <tbody>
+                                          <tr>
+                                              <div class="form-group">
+                                                <label for="sel1">Shirt Color:</label>
+                                                <select class="form-control" id="sel2" ng-model="shirtColor" required>
+                                                    <option>Blue</option>
+                                                    <option>Red</option>
+                                                    <option>Green</option>
+                                                    <option>Yellow</option>
+                                                    <option>Black</option>
+                                                </select>
+                                                </div>    
+                                          </tr>    
+                                      </tbody>     
+                                </table> 
+                        </form> 
+
+                    </div>
+
+                </div>
+
+                <div class="row" >
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-3">
+                            <label>Shirt Choices (Click to Choose): </label>
+                    </div>
+                    <hr>
+                </div>
+
+
+
+                <div class="row">
+                    
+                    <div class="col-sm-3"></div>
+
+
+                    <div class="col-sm-5">
+
+                            <img src="ShirtParadise.jpg" alt="Paradise Garage Shirt" style="width:25%;" 
+                             id="paradiseShirt" ng-click="shirtDesign = 'Paradise Garage'; designPrice = 20">
+                            <img src="ShirtShadow.jpg" alt="Moving Shadow Shirt" style="width:25%;"
+                             id="shadowShirt" ng-click="shirtDesign = 'Moving Shadow'; designPrice = 30">
+                            <img src="ShirtUR.jpg" alt="Underground Resistance Shirt" style="width:25%;"
+                             id="urShirt" ng-click="shirtDesign = 'Underground Resistance'; designPrice = 25">
+
+                    </div>
+
+                    <div class="col-sm-4">
+                    </div>
+                </div>
+                
+
+
+                <div class="row">
+                    <hr>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-3">
+
+                    </div>
+
+                    <div class="col-sm-6" >
+                        <p class="h5"><u>Order Information</u></p>
+                    </div>
+
+                    <div class="col-sm-3">
+
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+
+                     <div class="col-sm-3"></div>
+
+
+                    <div class="col-sm-6">  
+                        Full Name: {{firstName + " " + lastName}} 
+                    </div>               
+
+                    <div class="col-sm-3"> </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-3"></div>
+
+                    <div class="col-sm-6">   
+                        Address: {{Address + "  " + ApartmentNumber}}  
+                    </div>
+
+                    <div class="col-sm-3"></div>
+
+
+                </div>
+
+
+
+                <div class="row">
+
+                    <div class="col-sm-3"></div>
+
+                    <div class="col-sm-2">   
+                        Shirt Size: {{shirtSize}}  
+                    </div>
+
+                    <div class="col-sm-2">   
+                        Shirt Color: {{shirtColor}}  
+                    </div>
+
+
+
+                    <div class="col-sm-5"></div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-3"></div>
+
+
+                    <div class="col-sm-2">   
+                        Shirt Design: {{shirtDesign}}  
+                    </div>
+
+                    <div class="col-sm-2">   
+                        Shirt Cost: {{ ((designPrice * 1.053) + 5) | currency }} with Tax and Shipping   
+                    </div>
+
+                    <div class="col-sm-5">
+
+                    </div>
+
+                </div>
+
+                <div class="row" >
+                    <div class="col-sm-3"></div>
+                    <hr>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-3"></div>
+
+
+                    <div class="col-sm-2">   
+                        <button type="button" class="btn btn-outline-secondary" 
+                                id="subButton" ng-click="myFunc()" >Submit Order</button>
+                    </div>
+
+                    <div class="col-sm-7">
+
+                    </div>
+
+                </div>
+                
+                
+ 
+
+            </div>
+            
+    </body>
+    
+</html>
