@@ -30,7 +30,10 @@ that key.
 </table>
 
 <h2>Data-Binding-in-Angular.Js</h2>
-<h4>Framworks and Languages Used</h4>
+<p>
+  This webform is an exercise in data calculations and databinding. As ts the user updates an order, changes are made to that orders 
+  details such as cost plus shipping and the address to be shipped to. Clicking on the shirts changes the shirt ordered. 
+</p><h4>Framworks and Languages Used</h4>
 <table>
   <tr>
     <td>Javascript</td>
@@ -38,10 +41,4 @@ that key.
     <td>Angular.js</td>
   </tr>
 </table>
-
-<p>
-  This webform is an exercise in data calculations and databinding. As ts the user updates an order, changes are made to that orders 
-  details such as cost plus shipping and the address to be shipped to. Clicking on the shirts changes the shirt ordered. 
-</p>
-
 
