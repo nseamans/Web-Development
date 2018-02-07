@@ -1,5 +1,4 @@
-# Web-Development
-<p>Various Web projects that I have created to display knowledge in various languages, frameworks, API's, etc.</p>
+# JavaScript Work
 
 <h1>Projects</h1>
 <h2>Major and Minor Triad Application</h2>
