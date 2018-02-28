@@ -1,8 +1,9 @@
 /** printData
  *  This funcition takes input from the fizzbuzz function and
  *  displays data based on the given results. 
- *  
- *
+ *  NOTE: a regular expression is used to validate if the
+ *  data is a real number.. I.E not a float, decimal, or 
+ *  else.
  */ 
 function printData(fizz, buzz, fizzB, none, num){
   var isInt = /^-?[0-9]+$/;
