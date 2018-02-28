@@ -42,3 +42,10 @@ that key.
   </tr>
 </table>
 
+<h2>algorithms</h2>
+<p>
+ This folder is full of various algorithm challenges I am completing in javascript to better understand my computer science foundementals. 
+</p>
+
+
+
